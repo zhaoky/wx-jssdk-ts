@@ -1,0 +1,14 @@
+{
+  "name": "wx-jssdk-ts",
+  "version": "1.0.0",
+  "description": "微信官方 js-sdk ts版本",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoky/wx-jssdk-ts.git"
+  },
+  "keywords": [],
+  "author": "korey",
+  "license": "ISC",
+  "homepage": "https://github.com/zhaoky/wx-jssdk-ts#readme"
+}
