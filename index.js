@@ -1,5 +1,6 @@
 ! function (e, n) {
   module.exports = n(e)
+  module.exports.default = n(e);
 }(window, function (e, n) {
   function i(n, i, t) {
     e.WeixinJSBridge ? WeixinJSBridge.invoke(n, o(i),
