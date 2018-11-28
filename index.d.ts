@@ -473,7 +473,7 @@ declare namespace wx {
   /**
    * 批量隐藏功能按钮接口
    */
-  function hideMenuItems(): void;
+  function hideMenuItems(params: IhideMenuItems): void;
 
   interface IshowMenuItems extends BaseParams {
     menuList: menuList; // 要显示的菜单项，所有menu项见附录3
