@@ -584,6 +584,8 @@ declare namespace wx {
    */
   function chooseWXPay(params: IchooseWXPay): void;
   /*=============================微信支付================================*/
+  const miniProgram: any;
+  type miniProgram = any;
 }
 
 declare function wx(): void;
