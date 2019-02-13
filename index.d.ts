@@ -1,15 +1,6 @@
 // Type definitions for weixin jssdk 1.4.0
-// Project: https://mp.weixin.qq.com/wiki/11/74ad127cc054f6b80759c40f77ec03db.html
-// Definitions by: taoqf <https://github.com/taoqf>
-// 					gomydodo <https://github.com/gomydodo>
+// Project: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/* =================== USAGE ===================
-import * as wx from 'jweixin';
-wx.config(...);
-or
-import { config } from 'jweixin';
-config();
- =============================================== */
 
 declare namespace wx {
   type ImageSizeType = "original" | "compressed";
@@ -584,9 +575,29 @@ declare namespace wx {
    */
   function chooseWXPay(params: IchooseWXPay): void;
   /*=============================微信支付================================*/
-  const miniProgram: any;
-  type miniProgram = any;
+  /*=============================微信小程序==============================*/
+  interface miniProgramMethodsParams extends BaseParams {
+    url: string;
+  }
+  interface miniProgramMethods {
+    navigateTo(params: miniProgramMethodsParams): void;
+    navigateBack(params: miniProgramMethodsParams): void;
+    switchTab(params: miniProgramMethodsParams): void;
+    reLaunch(params: miniProgramMethodsParams): void;
+    redirectTo(params: miniProgramMethodsParams): void;
+    postMessage(params: { data: any }): void;
+    getEnv(fn: (res: any) => void): void;
+  }
+  const miniProgram: miniProgramMethods;
+  /*=============================微信小程序==============================*/
 }
-
 declare function wx(): void;
+/*=============================微信内全局变量==============================*/
+declare global {
+  interface Window {
+    WeixinJSBridge: any;
+    __wxjs_environment: any;
+  }
+}
+declare const WeixinJSBridge: any;
 export default wx;

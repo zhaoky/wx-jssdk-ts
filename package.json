@@ -1,8 +1,9 @@
 {
   "name": "wx-jssdk-ts",
-  "version": "1.0.0",
-  "description": "微信官方 js-sdk ts版本",
-  "main": "index.js",
+  "version": "1.1.1",
+  "description": "微信js-sdk ts版本封装（jweixin-1.4.0.js）及一些全局变量",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhaoky/wx-jssdk-ts.git"

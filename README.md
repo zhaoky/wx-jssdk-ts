@@ -1,6 +1,6 @@
-## 微信官方 js-sdk
+## 微信官方 js-sdk（ts 版）
 
-说明: 仅将官方 js-sdk 发布到 github，内含 ts 定义文件，支持 CommonJS，便于 browserify, webpack 等直接使用
+说明: 仅将官方 js-sdk 发布到 npm，内含 ts 定义文件，支持 CommonJS，便于 browserify, webpack 等直接使用
 
 js 源码: https://res.wx.qq.com/open/js/jweixin-1.4.0.js
 
@@ -8,8 +8,8 @@ js 源码: https://res.wx.qq.com/open/js/jweixin-1.4.0.js
 
 安装:
 
-npm install git+https://github.com/zhaoky/wx-jssdk-ts.git
+npm install wx-jssdk-ts
 
 使用:
 
-var wx = require('weixin-js-sdk');
+var wx = require('wx-jssdk-ts');
