@@ -598,6 +598,6 @@ declare global {
     WeixinJSBridge: any;
     __wxjs_environment: any;
   }
+  const WeixinJSBridge: any;
 }
-declare const WeixinJSBridge: any;
 export default wx;
