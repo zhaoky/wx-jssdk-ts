@@ -1,4 +1,4 @@
-// Type definitions for weixin jssdk 1.4.0
+// Type definitions for weixin jssdk 1.6.0
 // Project: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
@@ -47,6 +47,11 @@ declare namespace wx {
   // 所有JS接口列表
   type jsApiList = ApiMethod[];
 
+  // 开放标签列表
+  // https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_Open_Tag.html
+  type openTag = "wx-open-launch-weapp" | "wx-open-launch-app"
+  type openTagList = openTag[];
+
   // 所有菜单项列表
   // 基本类
   type menuBase =
@@ -88,6 +93,7 @@ declare namespace wx {
     nonceStr: string; // 必填，生成签名的随机串
     signature: string; // 必填，签名，见附录1
     jsApiList: jsApiList; // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    openTagList: openTagList;
   }): void;
 
   interface Resouce {
