@@ -1,5 +1,5 @@
 {
-  "name": "weixin-jssdk-ts",
+  "name": "weixin-js-sdk-ts",
   "version": "1.6.0",
   "description": "微信js-sdk ts版本封装（jweixin-1.6.0.js）及一些全局变量",
   "main": "./index.js",

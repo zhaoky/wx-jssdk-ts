@@ -8,8 +8,8 @@ js 源码: https://res.wx.qq.com/open/js/jweixin-1.6.0.js
 
 安装:
 
-npm install weixin-jssdk-ts
+npm install weixin-js-sdk-ts
 
 使用:
 
-var wx = require('weixin-jssdk-ts');
+var wx = require('weixin-js-sdk-ts);
