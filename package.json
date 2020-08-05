@@ -1,7 +1,7 @@
 {
-  "name": "wx-jssdk-ts",
-  "version": "1.1.1",
-  "description": "微信js-sdk ts版本封装（jweixin-1.4.0.js）及一些全局变量",
+  "name": "weixin-jssdk-ts",
+  "version": "1.6.0",
+  "description": "微信js-sdk ts版本封装（jweixin-1.6.0.js）及一些全局变量",
   "main": "./index.js",
   "types": "./index.d.ts",
   "repository": {
@@ -9,7 +9,9 @@
     "url": "git+https://github.com/zhaoky/wx-jssdk-ts.git"
   },
   "keywords": [],
-  "author": "korey",
   "license": "ISC",
-  "homepage": "https://github.com/zhaoky/wx-jssdk-ts#readme"
+  "homepage": "https://github.com/zhaoky/wx-jssdk-ts#readme",
+  "dependencies": {
+    "weixin-js-sdk": "^1.6.0"
+  }
 }
