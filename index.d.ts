@@ -103,6 +103,8 @@ declare namespace wx {
     success?(...args: any[]): void;
     /** 接口调用失败的回调函数 */
     fail?(...args: any[]): void;
+    /** 接口取消调用的回调函数 */
+    cancel?(...args: any[]): void;
     /** 接口调用结束的回调函数（调用成功、失败都会执行） */
     complete?(...args: any[]): void;
   }
