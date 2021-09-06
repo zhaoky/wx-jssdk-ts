@@ -92,8 +92,8 @@ declare namespace wx {
     timestamp: number; // 必填，生成签名的时间戳
     nonceStr: string; // 必填，生成签名的随机串
     signature: string; // 必填，签名，见附录1
-    jsApiList: jsApiList; // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
-    openTagList: openTagList;
+    jsApiList?: jsApiList; // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    openTagList?: openTagList;
   }): void;
 
   interface Resouce {
