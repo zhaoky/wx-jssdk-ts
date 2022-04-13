@@ -210,8 +210,6 @@ declare namespace wx {
     imgUrl: string; // 分享图标
     // 用户确认分享后执行的回调函数
     success(): void;
-    // 用户取消分享后执行的回调函数
-    cancel(): void;
   }
   /**
    * 获取“分享给朋友”及“分享到QQ”按钮点击状态及自定义分享内容接口（新）
@@ -224,8 +222,6 @@ declare namespace wx {
     imgUrl: string; // 分享图标
     // 用户确认分享后执行的回调函数
     success(): void;
-    // 用户取消分享后执行的回调函数
-    cancel(): void;
   }
   /**
    * 获取“分享到朋友圈”及“分享到QQ空间”按钮点击状态及自定义分享内容接口
